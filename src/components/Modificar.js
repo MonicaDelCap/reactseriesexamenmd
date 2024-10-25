@@ -59,7 +59,7 @@ export default class Modificar extends Component {
                 <main className="container">
                     <h1>Modificar Personaje</h1>
                     <div className="bg-light p-5 rounded">
-                        <select ref={this.cajaselectPersonaje} onChange={this.loadImagenPersonaje}>
+                        <select ref={this.cajaselectPersonaje} onChange={this.loadImagenPersonaje} className='form-select'>
                             <option disabled selected>Personaje</option>
                             {
                                 this.state.personajes.map((per, index)=> {
@@ -71,7 +71,7 @@ export default class Modificar extends Component {
 
                         </select>
                         <br/>
-                        <select ref={this.cajaselectSerie} onChange={this.loadImagenSerie}>
+                        <select ref={this.cajaselectSerie} onChange={this.loadImagenSerie} className='form-select'>
                         <option disabled selected>Series</option>
 
                             {

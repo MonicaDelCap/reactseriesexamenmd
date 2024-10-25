@@ -51,7 +51,8 @@ export default class Crear extends Component {
                         <input className="form-control" type="text" ref={this.cajaNombre} />
                         <label>Imagen</label>
                         <input className="form-control" type="text" ref={this.cajaImagen}/>
-                        <select ref={this.cajaselect}>
+                        <br/>
+                        <select ref={this.cajaselect} className='form-select'>
                             {
                                 this.state.series.map((serie, index) => {
                                     return(
