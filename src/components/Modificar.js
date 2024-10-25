@@ -60,6 +60,7 @@ export default class Modificar extends Component {
                     <h1>Modificar Personaje</h1>
                     <div className="bg-light p-5 rounded">
                         <select ref={this.cajaselectPersonaje} onChange={this.loadImagenPersonaje}>
+                            <option disabled selected>Personaje</option>
                             {
                                 this.state.personajes.map((per, index)=> {
                                     return(
@@ -71,6 +72,8 @@ export default class Modificar extends Component {
                         </select>
                         <br/>
                         <select ref={this.cajaselectSerie} onChange={this.loadImagenSerie}>
+                        <option disabled selected>Series</option>
+
                             {
                                 this.state.series.map((serie, index) => {
                                     return (
